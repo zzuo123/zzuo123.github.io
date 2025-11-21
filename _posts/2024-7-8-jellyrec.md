@@ -10,11 +10,56 @@ tags:
   - WebDev
   - Docker
   - Express
+gallery1:
+  - url: https://i.ibb.co/6R7mpnbH/Screenshot-20251120-220033.png
+    title: "Login Page"
+    alt: "JellyRec Login Page Allowing Signin with Jellyfin Credentials"
+  - url: https://i.ibb.co/YFdj9gNF/Screenshot-20251120-220108.png
+    title: "Favorites Tab"
+    alt: "JellyRec Favorites Tab Showing User's Favorite Movies"
+  - url: https://i.ibb.co/Q3sfyh7p/Screenshot-20251120-220124.png
+    title: "Recommendations Tab"
+    alt: "JellyRec Recommendations Tab Displaying Movie Suggestions"
+  - url: https://i.ibb.co/WNhggwqP/Screenshot-20251120-220441.png
+    title: "Load More Movies Button in Recommendations Tab"
+    alt: "JellyRec Load More Movies Button in Recommendations Tab"
+  - url: https://i.ibb.co/5hGT2X5h/Screenshot-20251120-220426.png
+    title: "Movie Details Modal"
+    alt: "JellyRec Movie Details Modal Showing Information about a Selected Movie"
 ---
 
 ## Project Idea :bulb:
 
 A movie recommendation system based on past viewing activities, similar to Netflix and YouTube. This feature currently doesn’t exist on Jellyfin, and Jellyfin only has access to movies on the user's device, instead of all the film out there. So we can connect the system to IMDB so we can recommend new films that the user can then purchase and rip to their device. 
+
+## Progress :chart_with_upwards_trend:
+
+### 2025-11-20
+
+This project has undergone a significant update to enhance the user interface as well as fixing various bugs. The frontend has been completely revamped using Next.js, and the Express.js backend is removed in favor of a more streamlined architecture. To checkout a hosted version of the app, visit [https://jrh1823rhui34y8.gzuo.me/login](https://jrh1823rhui34y8.gzuo.me/login).
+
+Here are the updated screenshots of the project:
+
+{% include gallery id="gallery1" caption="2025-11-20 version of JellyRec" %}
+
+### 2024-9-11
+
+The project is mostly considered complete, and you can find the github repository here: [Github Repo Link](https://github.com/zzuo123/jellyrec)
+
+It consists of the following components:
+- **frontend/**: A Svelte frontend that connects to the backend and displays the recommended movies
+- **backend/**: An Express backend that connects to the Jellyfin server as well as a python Flask server that serves the recommendation system
+- **recommendation_experiments/**: A collection of Jupyter notebooks that I used to experiment with different recommendation systems, it's pretty disorganized but contains some useful code snippets that can be improved upon
+
+Here are some screenshots of the project:
+
+![Login Page](https://i.ibb.co/Cs4vGmx/image.png)
+*Login Page*
+
+![Home Page](https://i.ibb.co/XWSGq3x/image.png)
+*Home Page*
+
+A user can login with their Jellyfin credentials, and the app will recommend movies based on their viewing history. The recommendation system is a simple collaborative filtering system that uses the MovieLens dataset.
 
 ## Scope :dart:
 
@@ -74,30 +119,9 @@ This one uses cosine similarity, is text based
 This one explains an alternative approach to collaborative filtering (content-based)
 
 
-## Progress :chart_with_upwards_trend:
+## Running the project:
 
-### 2024-9-11
-
-The project is mostly considered complete, and you can find the github repository here: [Github Repo Link](https://github.com/zzuo123/jellyrec)
-
-It consists of the following components:
-- **frontend/**: A Svelte frontend that connects to the backend and displays the recommended movies
-- **backend/**: An Express backend that connects to the Jellyfin server as well as a python Flask server that serves the recommendation system
-- **recommendation_experiments/**: A collection of Jupyter notebooks that I used to experiment with different recommendation systems, it's pretty disorganized but contains some useful code snippets that can be improved upon
-
-Here are some screenshots of the project:
-
-![Login Page](https://i.ibb.co/Cs4vGmx/image.png)
-*Login Page*
-
-![Home Page](https://i.ibb.co/XWSGq3x/image.png)
-*Home Page*
-
-A user can login with their Jellyfin credentials, and the app will recommend movies based on their viewing history. The recommendation system is a simple collaborative filtering system that uses the MovieLens dataset.
-
-**Running the project:**
-
-Update (11/05/2024): To streamline the installation process, Docker is now used to run the project. To install docker, follow the instructions [here](https://docs.docker.com/get-docker/).
+Update (11/20/2025): To streamline the installation process, Docker is now used to run the project. To install docker, follow the instructions [here](https://docs.docker.com/get-docker/).
 
 To test if Docker is installed correctly, run the following command:
 
@@ -117,12 +141,18 @@ To run the project, you first need to clone the Github Repository using the foll
 git clone https://github.com/zzuo123/jellyrec.git
 ```
 
-Then, navigate to the project directory and run the following command to build and start the project:
+Then, navigate to the project directory and follow the following the instructions in the [README.md](https://github.com/zzuo123/jellyrec/blob/master/README.md) file to get started:
 
 ```bash
-docker compose up -d
+cd jellyrec/
+
+# on Linux or MAC
+cat README.md
+# on Windows
+notepad.exe README.md
+# follow the instructions there to set up and run the project
 ```
 
-And then you can access the app at [http://localhost:5000](http://localhost:5000) or whichever port the frontend server is running on.
+After that, you can access the app at [http://localhost:3000](http://localhost:3000) or whichever port the frontend server is running on.
 
 Try it out and let me know what you think! :smile:
