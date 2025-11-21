@@ -47,7 +47,7 @@ This project has undergone a significant update to enhance the user interface as
 
 Here are the updated screenshots of the project:
 
-{% include gallery id="gallery1" caption="2025-11-20 version of JellyRec" %}
+{% include gallery1 caption="2025-11-20 version of JellyRec" %}
 
 ### 2024-9-11
 
