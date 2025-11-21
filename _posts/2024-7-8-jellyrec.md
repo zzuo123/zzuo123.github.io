@@ -26,6 +26,13 @@ gallery1:
   - url: https://i.ibb.co/5hGT2X5h/Screenshot-20251120-220426.png
     title: "Movie Details Modal"
     alt: "JellyRec Movie Details Modal Showing Information about a Selected Movie"
+gallery2:
+  - url: https://i.ibb.co/Cs4vGmx/image.png
+    title: "Login Page"
+    alt: "JellyRec Login Page Allowing Signin with Jellyfin Credentials"
+  - url: https://i.ibb.co/XWSGq3x/image.png
+    title: "Home Page"
+    alt: "JellyRec Home Page Displaying Recommended Movies"
 ---
 
 ## Project Idea :bulb:
@@ -53,11 +60,7 @@ It consists of the following components:
 
 Here are some screenshots of the project:
 
-![Login Page](https://i.ibb.co/Cs4vGmx/image.png)
-*Login Page*
-
-![Home Page](https://i.ibb.co/XWSGq3x/image.png)
-*Home Page*
+{% include gallery id="gallery2" caption="2024-9-11 version of JellyRec" %}
 
 A user can login with their Jellyfin credentials, and the app will recommend movies based on their viewing history. The recommendation system is a simple collaborative filtering system that uses the MovieLens dataset.
 
