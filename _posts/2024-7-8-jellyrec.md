@@ -54,7 +54,7 @@ This project has undergone a significant update to enhance the user interface as
 
 Here are the updated screenshots of the project:
 
-{% include gallery id="gallery1" caption="2025-11-20 version of JellyRec" %}
+{% include gallery id="gallery1" layout="half" caption="2025-11-20 version of JellyRec (Click to enlarge)" %}
 
 ### 2024-9-11
 
@@ -67,7 +67,7 @@ It consists of the following components:
 
 Here are some screenshots of the project:
 
-{% include gallery id="gallery2" caption="2024-9-11 version of JellyRec" %}
+{% include gallery id="gallery2" caption="2024-9-11 version of JellyRec (Click to enlarge)" %}
 
 A user can login with their Jellyfin credentials, and the app will recommend movies based on their viewing history. The recommendation system is a simple collaborative filtering system that uses the MovieLens dataset.
 
