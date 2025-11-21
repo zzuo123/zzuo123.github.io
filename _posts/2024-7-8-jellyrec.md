@@ -12,27 +12,34 @@ tags:
   - Express
 gallery1:
   - url: https://i.ibb.co/6R7mpnbH/Screenshot-20251120-220033.png
+    image_path: https://i.ibb.co/6R7mpnbH/Screenshot-20251120-220033.png
     title: "Login Page"
     alt: "JellyRec Login Page Allowing Signin with Jellyfin Credentials"
   - url: https://i.ibb.co/YFdj9gNF/Screenshot-20251120-220108.png
+    image_path: https://i.ibb.co/YFdj9gNF/Screenshot-20251120-220108.png
     title: "Favorites Tab"
     alt: "JellyRec Favorites Tab Showing User's Favorite Movies"
   - url: https://i.ibb.co/Q3sfyh7p/Screenshot-20251120-220124.png
+    image_path: https://i.ibb.co/Q3sfyh7p/Screenshot-20251120-220124.png
     title: "Recommendations Tab"
     alt: "JellyRec Recommendations Tab Displaying Movie Suggestions"
   - url: https://i.ibb.co/WNhggwqP/Screenshot-20251120-220441.png
+    image_path: https://i.ibb.co/WNhggwqP/Screenshot-20251120-220441.png
     title: "Load More Movies Button in Recommendations Tab"
     alt: "JellyRec Load More Movies Button in Recommendations Tab"
   - url: https://i.ibb.co/5hGT2X5h/Screenshot-20251120-220426.png
+    image_path: https://i.ibb.co/5hGT2X5h/Screenshot-20251120-220426.png
     title: "Movie Details Modal"
     alt: "JellyRec Movie Details Modal Showing Information about a Selected Movie"
 gallery2:
   - url: https://i.ibb.co/Cs4vGmx/image.png
+    image_path: https://i.ibb.co/Cs4vGmx/image.png
     title: "Login Page"
     alt: "JellyRec Login Page Allowing Signin with Jellyfin Credentials"
   - url: https://i.ibb.co/XWSGq3x/image.png
+    image_path: https://i.ibb.co/XWSGq3x/image.png
     title: "Home Page"
-    alt: "JellyRec Home Page Displaying Recommended Movies"
+    alt: "JellyRec Home Page Displaying Favorited Recommended Movies"
 ---
 
 ## Project Idea :bulb:
@@ -47,7 +54,7 @@ This project has undergone a significant update to enhance the user interface as
 
 Here are the updated screenshots of the project:
 
-{% include gallery1 caption="2025-11-20 version of JellyRec" %}
+{% include gallery id="gallery1" caption="2025-11-20 version of JellyRec" %}
 
 ### 2024-9-11
 
